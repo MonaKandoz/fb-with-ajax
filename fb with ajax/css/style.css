@@ -1,0 +1,106 @@
+body{
+    background-color: #2a4c8e;
+    color: #ffffff;
+    font-family: 'Cairo', sans-serif;
+
+}
+h1{
+    margin: 20px 0;
+}
+.card{
+    margin: 20px 0;
+    color: #000000;
+}
+.form-group{
+    color: #000000;
+    padding: 20px;
+    margin-bottom: 0 !important;
+    font-size: 18px;
+}
+textarea{
+    border: 0 !important;
+    border-bottom: 3px solid #2a4c8e57 !important;
+    border-radius: 0 !important;
+    transition: border .5s ease-in-out  !important;
+    resize: none;
+    height: 100px !important;
+    opacity: 0.5;
+}
+textarea:focus{
+    border: 0 !important;
+    box-shadow: none !important;
+    opacity: 1;
+}
+.text, .edit{
+    margin-top: 30px;
+    position: relative;
+}
+.text::after, .edit::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #2a4c8e;
+    transform: scale(0,1);
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+}
+.text:focus-within::after, .edit:focus-within::after{
+    transform: scale(1,1) !important;
+}
+/*
+.text::before{
+    content: 'Type something here...';
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    color: #000000;
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+}
+.text:focus-within::before{
+    content: 'Type something here:';
+    top: -35px;
+}*/
+.text span{
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    color: #000000;
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+}
+.text:focus-within span{
+    top: -35px !important;
+}
+.btn-fb{
+    background-color: #2a4c8e;
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 5px 20px !important;
+}
+.posts{
+    position: relative;
+    padding: 20px;
+}
+.control{
+    position: absolute;
+    right: 0;
+    top:0;
+    padding: 10px;
+}
+.control i{
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.control i:hover{
+    background-color: #2a4c8eb5;
+    color: #ffffff;
+    border-radius: 10px;;
+}
+small{
+    margin: 10px 0;
+    color: gray;
+}
